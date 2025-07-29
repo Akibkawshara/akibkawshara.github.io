@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akibkawshara</title>
+  <style>
+    :root {
+      --bg-color: #0d0d0d;
+      --text-color: #ffffff;
+      --card-bg: #1a1a1a;
+    }body.light {
+  --bg-color: #f5f5f5;
+  --text-color: #111111;
+  --card-bg: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.4s, color 0.4s;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  z-index: 9999;
+}
+
+header {
+  background: #e60000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+header h1 {
+  margin-left: 15px;
+  font-size: 2em;
+  color: white;
+}
+
+nav {
+  background: var(--card-bg);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 14px 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #b30000;
+  box-shadow: 0 0 10px #ff1a1a;
+}
+
+section {
+  background: var(--card-bg);
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a.button {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+}
+
+.link {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 15px;
+}
+
+ul.custom-bullets {
+  list-style-type: "• ";
+  padding-left: 20px;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+#topBtn:hover {
+  background-color: #cc0000;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+  </style>
+</head>
+<body class="dark">  <!-- Loader -->  <div class="loader" id="loader">Loading...</div>  <!-- Theme Toggle --><button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+
+  <!-- Main Content -->  <div id="content" style="display: none;">
+    <!-- Header -->
+    <header>
+      <a href="#" class="header-link">
+        <img src="https://i.postimg.cc/59K7X1DN/IMG-20250730-014014.jpg" alt="Channel Logo">
+        <h1>Akibkawshara</h1>
+      </a>
+    </header><!-- Navigation -->
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#description">Description</a>
+  <a href="#videos">Videos</a>
+  <a href="#gaming">Gaming Info</a>
+  <a href="#social">Social Platforms</a>
+</nav>
+
+<!-- About Me -->
+<section id="about">
+  <details open>
+    <summary>About Me</summary>
+    <ul class="custom-bullets">
+      <li>I'm Akib Kawshar Ali</li>
+      <li>From Assam, India</li>
+      <li>Gamer & Editor</li>
+      <li>Birthday: 18 December 2011</li>
+      <li>Anime Lover / Fan</li>
+      <li>Play Free Fire & Minecraft</li>
+    </ul>
+  </details>
+</section>
+
+<!-- Description -->
+<section id="description">
+  <details open>
+    <summary>Description</summary>
+    <p>Hello Guys!<br>
+    I need your support! I'll keep bringing awesome content to my channel, so please subscribe and hit the bell icon so you don't miss any updates. With your support, I'll be able to make even better videos. Thank you so much!</p>
+    <p>📧 Email for business purposes: <a href="mailto:akibkawshara@gmail.com" class="link">akibkawshara@gmail.com</a></p>
+  </details>
+</section>
+
+<!-- Videos -->
+<section id="videos">
+  <h2>Watch the Latest Video</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLK1xA4-jbSkqMCu1_Q_9ch_uWHq7N0lyG" frameborder="0" allowfullscreen></iframe>
+  <br>
+  <a href="https://www.youtube.com/@Akibkawshara-india" class="button" target="_blank">Visit My Channel</a>
+</section>
+
+<!-- Gaming Info -->
+<section id="gaming">
+  <details open>
+    <summary>Gaming Info</summary>
+    <ul>
+      <li>Free Fire – UID: 6598898938</li>
+      <li>Minecraft – Username: akibkawshara</li>
+    </ul>
+  </details>
+</section>
+
+<!-- Social Platforms -->
+<section id="social">
+  <details open>
+    <summary>Social Platforms</summary>
+    <p>📷 Instagram: <a href="https://www.instagram.com/akibkawshara" class="link" target="_blank">akibkawshara</a></p>
+    <p>📢 WhatsApp Channel: <a href="https://whatsapp.com/channel/0029VbB2zfi77qVV5dy0Jq3g" class="link" target="_blank">akibkawshara</a></p>
+  </details>
+</section>
+
+  </div>  <!-- Back to Top Button --><button onclick="scrollToTop()" id="topBtn" title="Back to top">↑</button>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    });
+
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = () => {
+      topBtn.style.display = (document.documentElement.scrollTop > 100) ? "block" : "none";
+      document.querySelectorAll("section").forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          sec.classList.add("visible");
+        }
+      });
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+    }
+  </script></body>
+</html>
